@@ -11,7 +11,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+allow_origins=[
+    "http://localhost:3000",
+    "https://your-app.vercel.app"
+],
 app.include_router(assistant_router)
 
 @app.get("/")
