@@ -13,7 +13,7 @@ app.add_middleware(
 )
 allow_origins=[
     "http://localhost:3000",
-    "https://your-app.vercel.app"
+    "https://productivity-assistant-frontend-6bo.vercel.app"
 ],
 app.include_router(assistant_router)
 
